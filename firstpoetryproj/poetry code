@@ -1,0 +1,9 @@
+# Taken from mission Acceptable Password II
+
+# Taken from mission Acceptable Password I
+def is_acceptable_password(password: str) -> bool:
+    return len(password) > 6 and any(char.isdigit() for char in password) and not password.isdigit()
+
+
+print("Example:")
+print(is_acceptable_password("short"))
